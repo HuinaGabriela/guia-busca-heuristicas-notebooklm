@@ -167,6 +167,20 @@ Consistente: evita revisitar nós
 
 ## 🧠 Especificações de Busca em Inteligência Artificial
 
+👉 Comparativo de algoritmos de busca em IA
+
+Ela serve para você responder perguntas como:
+
+“Qual algoritmo usar?”
+
+“Qual é mais rápido?”
+
+“Qual usa menos memória?”
+
+“Qual garante solução ótima?
+
+é tipo um guia de decisão para escolher o melhor para cada problema
+
 <p align="center">
   <img src="Especificações_de_Busca_em_Inteligência_Artificial.PNG" width="600"/>
 </p>
@@ -180,10 +194,12 @@ Consistente: evita revisitar nós
 
 
 
-🏁 Conclusão
+## 🏁 Conclusão
 
-O estudo demonstrou que o uso de heurísticas adequadas transforma problemas complexos em soluções viáveis.
+Este estudo evidenciou como o uso de heurísticas bem definidas é fundamental para transformar problemas de busca em Inteligência Artificial em soluções computacionalmente viáveis.
 
-A combinação do algoritmo A* com a heurística de Manhattan mostrou-se extremamente eficiente para o 8-puzzle, reduzindo drasticamente o número de nós explorados.
+A aplicação do algoritmo A*, aliado à heurística de Distância de Manhattan, demonstrou alta eficiência na resolução do 8-puzzle, reduzindo significativamente o número de nós explorados e garantindo a obtenção de soluções ótimas.
 
-Além disso, a prática de engenharia de prompts evidenciou a importância de formular boas perguntas para extrair conhecimento relevante da IA.
+Além do aspecto algorítmico, a prática de engenharia de prompts mostrou-se essencial para extrair respostas mais precisas e relevantes da IA, reforçando a importância do pensamento crítico na interação com modelos generativos.
+
+Por fim, o uso do NotebookLM como ferramenta de apoio permitiu organizar o conhecimento de forma estruturada, contribuindo para a criação de um guia de estudos reutilizável e bem fundamentado.
