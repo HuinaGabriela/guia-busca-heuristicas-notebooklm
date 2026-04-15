@@ -165,15 +165,19 @@ Admissível: nunca superestima
 
 Consistente: evita revisitar nós
 
-🔁 5. Prompts Reutilizáveis
+## 🧠 Especificações de Busca em Inteligência Artificial
 
-Explique A* com exemplo passo a passo
+<p align="center">
+  <img src="Especificações_de_Busca_em_Inteligência_Artificial.PNG" width="600"/>
+</p>
 
-Compare heurísticas admissíveis
 
-Como melhorar desempenho no 8-puzzle?
+## 🧠 Mapa Mental do Estudo do livro Artificial Intelligence A Modern Approach
 
-Explique dominação entre heurísticas
+<p align="center">
+  <img src="NotebookLM_Mind_Map.png" width="600"/>
+</p>
+
 
 
 🏁 Conclusão
