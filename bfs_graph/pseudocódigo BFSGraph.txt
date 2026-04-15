@@ -1,0 +1,28 @@
+BFS-Graph(estado_inicial):
+    se estado_inicial é objetivo:
+        retorna solução vazia
+
+    // Estruturas de controle
+    open ← nova fila (FIFO)
+    closed ← novo conjunto vazio
+
+    // Inserir nó raiz
+    nó_raiz ← criar nó(estado_inicial, pai = nulo, custo = 0)
+    open.enfileirar(nó_raiz)
+    closed.inserir(estado_inicial)
+
+    enquanto open não está vazia:
+        nó ← open.desenfileirar()
+        
+        para cada sucessor em sucessores(nó.estado):
+            // Verifica se alcançou objetivo
+            se sucessor é objetivo:
+                retorna caminho extraído a partir de (nó, sucessor)
+
+            // Se não visitado, adiciona na busca
+            se sucessor ∉ closed:
+                closed.inserir(sucessor)
+                novo_nó ← criar nó(sucessor, pai = nó, custo = nó.custo + 1)
+                open.enfileirar(novo_nó)
+
+    retorna "sem solução"
