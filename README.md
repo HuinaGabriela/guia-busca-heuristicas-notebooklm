@@ -186,7 +186,7 @@ Ela serve para você responder perguntas como:
 </p>
 
 
-## 🧠 Mapa Mental do Estudo do livro Artificial Intelligence A Modern Approach
+## 🧠 Mapa Mental do Estudo do livro "Artificial Intelligence A Modern Approach"
 
 <p align="center">
   <img src="NotebookLM_Mind_Map.png" width="600"/>
