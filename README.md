@@ -1,4 +1,4 @@
-# 📘 Mini Guia de Estudos – Busca em Grafos e Problema do 8-Puzzle
+# 📘 Mini Guia de Estudos sobre heurísticas de IA aplicada ao projeto do jogo puzzle8
 
 🎯 Contexto e Objetivos
 
