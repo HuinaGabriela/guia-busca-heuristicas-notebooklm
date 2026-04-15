@@ -175,7 +175,6 @@ Como melhorar desempenho no 8-puzzle?
 
 Explique dominação entre heurísticas
 
-Qual a diferença entre Greedy e A*?
 
 🏁 Conclusão
 
