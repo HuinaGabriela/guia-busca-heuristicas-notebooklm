@@ -1,111 +1,186 @@
 # 📘 Mini Guia de Estudos – Busca em Grafos e Problema do 8-Puzzle
 
-## 🎯 Objetivo do Material
+🎯 Contexto e Objetivos
 
-Este repositório tem como objetivo servir como um **guia de estudos estruturado** sobre algoritmos de busca em grafos aplicados ao **problema do 8-puzzle**.
+Este projeto foi desenvolvido como parte de um desafio prático da DIO com o objetivo de explorar o uso da Inteligência Artificial como ferramenta de aprendizagem ativa.
 
-A proposta não é apenas apresentar implementações, mas também:
+O tema escolhido foi busca heurística em IA, com foco nos algoritmos:
 
-* Consolidar o conhecimento já adquirido
-* Servir como base para aprendizado contínuo
-* Facilitar a expansão para novos algoritmos e projetos futuros
+Best-First Search
 
----
+Greedy Search
 
-## 🧠 Contexto
+A* (A-Star)
 
-O material foi desenvolvido a partir de um projeto acadêmico implementado em **C++**, baseado em:
+A* Ponderado
 
-* Conteúdos fornecidos em aula
-* Livros e referências teóricas
-* Experimentação prática
+E sua aplicação no problema clássico do 8-puzzle.
 
-A implementação atual já resolve o problema utilizando:
+📌 Objetivos de Estudo
+Entender como heurísticas guiam algoritmos de busca
+Comparar diferentes estratégias de busca informada
+Analisar desempenho entre heurísticas (h1 vs h2)
+Aplicar conceitos teóricos em problemas clássicos
 
-* **Busca em Largura (BFS)**
+📚 Curadoria de Fontes
 
-Este guia organiza esse conhecimento e prepara o terreno para evolução.
+As seguintes fontes foram utilizadas e analisadas no NotebookLM:
 
----
+📘 Russell, S.; Norvig, P. — Artificial Intelligence: A Modern Approach
 
-## 🧩 Problema: 8-Puzzle
+📄 Materiais sobre algoritmo A*
 
-O 8-puzzle é um problema clássico de busca onde o objetivo é reorganizar peças numeradas em uma grade 3x3 até atingir um estado final desejado.
+📄 Conteúdos sobre o problema do 8-puzzle
 
-Este problema é amplamente utilizado para estudar:
+📄 Estudos sobre heurísticas admissíveis e consistentes
 
-* Algoritmos de busca
-* Heurísticas
-* Otimização de caminhos
+📄 Documentação sobre busca informada
 
----
 
-## ✅ Conteúdo Já Implementado
+🤖 Engenharia de Prompts e Aprendizado
 
-* [x] Modelagem do problema como grafo
-* [x] Representação de estados
-* [x] Geração de movimentos válidos
-* [x] Implementação da **Busca em Largura (BFS)**
-* [x] Solução funcional do problema
+Durante o processo, utilizei diferentes estratégias de prompts para extrair conhecimento mais preciso.
 
----
+🔹 Prompt 1
 
-## 🚧 Próximos Passos (Expansão do Estudo)
+Pergunta:
+Explique a heurística Best-First Search.
 
-Este guia também servirá como base para implementação e estudo dos seguintes algoritmos:
+Resultado:
+Obtive uma visão geral do algoritmo e sua função de avaliação f(n).
 
-* [ ] Iterative Deepening (Busca em Profundidade Iterativa)
-* [ ] A* (A-estrela)
-* [ ] IDA* (Iterative Deepening A*)
-* [ ] Greedy Best-First Search
+🔹 Prompt 2
 
----
+Pergunta:
+Qual a melhor estratégia para resolver o 8-puzzle?
 
-## 🔍 Objetivos de Aprendizado
+Resultado:
+Identifiquei que o algoritmo A* com heurística de Manhattan é o mais eficiente.
 
-Ao utilizar este material, espera-se:
+🔹 Prompt 3
 
-* Compreender profundamente algoritmos de busca
-* Comparar desempenho entre diferentes estratégias
-* Entender o papel de heurísticas na otimização
-* Desenvolver capacidade de aplicar esses conceitos em outros problemas
+Pergunta:
+Compare heurísticas h1 e h2 no 8-puzzle com dados.
 
----
+Resultado:
+Obtive comparações quantitativas de desempenho (número de nós expandidos).
 
-## 📈 Aplicações Futuras
+⚠️ Dificuldades Encontradas
 
-Os conceitos estudados aqui podem ser aplicados em diversas áreas:
+Respostas iniciais muito genéricas
 
-* Inteligência Artificial
-* Jogos
-* Planejamento de rotas
-* Sistemas de decisão
-* Otimização de problemas complexos
+Falta de comparação quantitativa entre heurísticas
 
----
+Necessidade de refinar perguntas
 
-## 🗂️ Estrutura do Projeto
+✅ Estratégias de Melhoria
 
-```
-/src            -> Código-fonte em C++
-/docs           -> Anotações e explicações teóricas
-/tests          -> Casos de teste
-/heuristics     -> Implementações de heurísticas futuras
-README.md       -> Este guia de estudos
-```
+Uso de prompts mais específicos
 
----
+Solicitação de exemplos numéricos
 
-## 🧭 Como Usar Este Guia
+Comparações diretas entre algoritmos
 
-1. Revise a implementação atual (BFS)
-2. Entenda a modelagem do problema
-3. Estude cada novo algoritmo antes de implementar
-4. Compare resultados entre abordagens
-5. Use este material como base para novos projetos
+📘 Miniguia de Estudo
 
----
+📌 1. Best-First Search (Resumo)
 
-## 📌 Observação Final
+A Best-First Search é uma classe de algoritmos de busca informada que seleciona o próximo nó com base em uma função de avaliação:
 
-Este não é apenas um repositório de código, mas um **recurso de aprendizado contínuo**. A ideia é evoluir o conhecimento de forma estruturada, transformando prática em domínio real do conteúdo.
+f(n)
+
+Ela utiliza uma fila de prioridade e sempre expande o nó mais promissor.
+
+🔍 Principais Variações
+
+Greedy Best-First: f(n) = h(n)
+
+Rápido, mas não garante solução ótima
+
+A*: f(n) = g(n) + h(n)
+
+Completo e ótimo (se h for admissível)
+
+A* Ponderado: f(n) = g(n) + w·h(n)
+
+Mais rápido, mas pode perder otimalidade
+
+🧩 2. Estratégias para o 8-Puzzle
+
+✅ Melhor abordagem:
+
+A* com heurística de Manhattan
+
+🔢 Heurísticas
+
+h1 — Peças fora do lugar
+
+Conta peças em posições erradas
+
+Simples, porém menos eficiente
+
+h2 — Distância de Manhattan
+
+Soma das distâncias horizontal e vertical
+
+Mais precisa e eficiente
+
+📊 Comparação de Desempenho
+
+Heurística	Nós expandidos (d=12)
+
+h1	~227
+
+Manhattan	~73
+
+👉 Manhattan pode ser até 50.000x mais eficiente que busca cega
+
+🧠 3. Conceitos Fundamentais
+
+✔ Heurística Admissível
+
+Nunca superestima o custo real até o objetivo.
+
+✔ Heurística Consistente
+
+Mantém coerência entre estados (evita retrabalho).
+
+✔ Dominação
+
+Se h2 ≥ h1 para todos os estados, então h2 é mais eficiente.
+
+📖 4. Glossário
+
+Heurística: função que estima custo até o objetivo
+
+A*: algoritmo de busca ótima
+
+g(n): custo real do caminho
+
+h(n): custo estimado
+
+f(n): função de avaliação
+
+Admissível: nunca superestima
+
+Consistente: evita revisitar nós
+
+🔁 5. Prompts Reutilizáveis
+
+Explique A* com exemplo passo a passo
+
+Compare heurísticas admissíveis
+
+Como melhorar desempenho no 8-puzzle?
+
+Explique dominação entre heurísticas
+
+Qual a diferença entre Greedy e A*?
+
+🏁 Conclusão
+
+O estudo demonstrou que o uso de heurísticas adequadas transforma problemas complexos em soluções viáveis.
+
+A combinação do algoritmo A* com a heurística de Manhattan mostrou-se extremamente eficiente para o 8-puzzle, reduzindo drasticamente o número de nós explorados.
+
+Além disso, a prática de engenharia de prompts evidenciou a importância de formular boas perguntas para extrair conhecimento relevante da IA.
